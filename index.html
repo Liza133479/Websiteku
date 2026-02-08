@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Websiteku</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Aku</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
+}
+
+body{
+    background:#f4eadf;
+    color:#222;
+    text-align:center;
+}
+
+/* ===== TYPING ===== */
+.typing{
+    margin-top:50px;
+    font-size:32px;
+    font-weight:700;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right:3px solid #222;
+    width:0;
+}
+
+.sub{
+    margin-top:12px;
+    font-size:15px;
+    opacity:0;
+}
+
+/* ===== FOTO ===== */
+.photo{
+    margin:30px auto;
+    width:90%;
+    max-width:320px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    opacity:0;
+    transform:translateY(20px);
+    transition:1s;
+}
+
+.photo img{
+    width:100%;
+    display:block;
+}
+
+/* ===== BIODATA CARD ===== */
+.card{
+    background:#ead6c2;
+    margin:40px auto;
+    width:90%;
+    max-width:380px;
+    padding:20px;
+    border-radius:20px;
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    text-align:left;
+}
+
+td{
+    padding:6px;
+    font-size:15px;
+}
+
+/* ===== HATI ===== */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:18px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100vh);
+        opacity:0;
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>Halo 👋</h1>
-  <p>Ini website pertamaku, dibuat dari HP.</p>
-</body>
-</html>
+
+<h1 class="typing" id="typing"></h1>
+<p class="sub" id="sub">scroll ke bawah buat liat biodata aku 🤍</p>
+
+<div class="photo" id="photo">
+    <img src="media/images/Foto1.jpeg"
+    class="foto-bulat">
+</div>
